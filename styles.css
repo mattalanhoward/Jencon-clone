@@ -429,8 +429,8 @@ TESTIMONIAL SLIDES
   margin: 0;
 }
 
-.licenses-container {
-}
+/* .licenses-container {
+} */
 
 .licenses h4 {
   margin: 10px 10px 10px 0;
@@ -463,7 +463,7 @@ Image Containers
 ************* */
 
 .work-image-container {
-  min-width: 64%;
+  min-width: 63%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
