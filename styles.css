@@ -10,6 +10,13 @@ body {
   margin: 0;
 }
 
+p {
+  line-height: 2rem;
+  font-size: 16px;
+  color: #355d8e;
+  font-weight: 400;
+}
+
 /* ************
    NAV BAR
 ************* */
@@ -97,11 +104,7 @@ nav {
 
 .about p {
   text-align: center;
-  line-height: 2rem;
-  font-size: 16px;
   margin-bottom: 20px;
-  color: #355d8e;
-  font-weight: 400;
 }
 
 /* ************
@@ -115,10 +118,14 @@ TESTIMONIAL SLIDES
 /* Slideshow container */
 .testimonials-container {
   width: 100%;
-  height: 300px;
+  height: 400px;
   position: relative;
   margin: auto;
   background-image: url("https://ssjencon.wpengine.com/wp-content/uploads/2020/04/Jencon-home-quotebg-min.png");
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,7 +171,8 @@ TESTIMONIAL SLIDES
 .slide p:first-child {
   color: #f2f2f2;
   font-size: 15px;
-  width: 100%;
+  width: 60%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -175,7 +183,6 @@ TESTIMONIAL SLIDES
   width: 15px;
   margin: 0 2px;
   border: 1px solid white;
-  /* background-color: transparent; */
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -215,6 +222,50 @@ TESTIMONIAL SLIDES
 /* ************
     OUR WORK
 ************* */
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000px;
+}
+
+.work-container h2 {
+  height: 200px;
+  font-size: 40px;
+  color: #355d8e;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work {
+  display: flex;
+  height: 70%;
+}
+
+.work-details {
+  border: 2px solid red;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  padding: 3rem;
+}
+
+.work-details h3 {
+  text-transform: uppercase;
+  color: #355d8e;
+  font-size: 32px;
+  text-align: right;
+}
+
+.work img {
+  width: 60%;
+}
 
 /* ************
     CAREERS
