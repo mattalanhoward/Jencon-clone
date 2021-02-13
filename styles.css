@@ -10,6 +10,15 @@ body {
   margin: 0;
 }
 
+h1 {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 52px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
 h2 {
   height: 200px;
   font-size: 40px;
@@ -107,15 +116,6 @@ nav {
 
 #slogan {
   margin: 0 3rem 2rem 0;
-}
-
-#slogan h1 {
-  text-align: right;
-  text-transform: uppercase;
-  font-size: 52px;
-  color: white;
-  margin: 0;
-  padding: 0;
 }
 
 /* ************
@@ -303,22 +303,6 @@ TESTIMONIAL SLIDES
   text-align: right;
 }
 
-#upfits-image {
-  background-image: url("https://jenconbuilders.com/wp-content/uploads/2020/05/jencon-services-bg1-min.png");
-}
-
-#commercial-image {
-  background-image: url("https://jenconbuilders.com/wp-content/uploads/2020/05/CGH_1723-min.jpg");
-}
-
-#restaurants-image {
-  background-image: url("https://jenconbuilders.com/wp-content/uploads/2020/05/jencon-services-bg2-min.png");
-}
-
-#industrial-image {
-  background-image: url("https://jenconbuilders.com/wp-content/uploads/2020/05/jencon-home-industrial2-min.png");
-}
-
 /* ************
     CAREERS
 ************* */
@@ -348,6 +332,7 @@ TESTIMONIAL SLIDES
 
 .careers-details h4 {
   font-size: 18px;
+  color: white;
 }
 
 .careers-details ul {
@@ -459,14 +444,12 @@ footer {
   text-align: center;
 }
 /* ************
-Image Containers
+    Images
 ************* */
 
-.work-image-container {
-  min-width: 63%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+.work-image-container img {
+  width: 800px;
+  height: 800px;
 }
 
 #careers-image {
@@ -528,4 +511,155 @@ Image Containers
 #btn-submit:hover {
   transition-duration: 0.3s;
   background-color: rgba(53, 93, 142, 0.7);
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    margin: 10px 0;
+  }
+  /* ************
+   NAV BAR
+************* */
+
+  .nav-links {
+    display: none;
+  }
+
+  /* ************
+    ABOUT
+************* */
+  .about {
+    margin: 25px auto;
+    width: 80%;
+    height: auto;
+  }
+
+  /* ************
+   OUR WORK
+************* */
+  .work-left,
+  .work-right {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 600px;
+  }
+
+  .work-details-left,
+  .work-details-right {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .work-image-container img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .work-details-right h3,
+  .work-details-left h3 {
+    text-align: center;
+    margin: 10px;
+  }
+
+  /* ************
+   TESTIMONIALS
+************* */
+  .testimonials-container {
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+    padding: 20px 0;
+  }
+  /* ************
+   CAREERS
+************* */
+
+  .careers-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .careers-details {
+    padding: 30px 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .careers-details li {
+    width: 100%;
+  }
+
+  .careers-details h2 {
+    margin: 10px;
+  }
+
+  .careers-details ul {
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  /* ************
+    CONTACT
+************* */
+  .contact-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .client-info input {
+    height: 50px;
+    width: 100%;
+  }
+
+  .get-in-touch {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /* .licenses-container {
+} */
+
+  .licenses h4 {
+    margin: 0 auto;
+  }
+
+  .social-media {
+    text-align: center;
+  }
+
+  #btn-submit {
+    position: static;
+    margin: 0 auto;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+    border: 2px solid yellow;
+  }
+}
+
+/* Large devices (ipad pro / laptops / desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html {
+    border: 2px solid red;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
