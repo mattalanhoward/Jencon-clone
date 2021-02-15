@@ -91,7 +91,7 @@ nav {
 
 .nav-links.responsive {
   background-color: white;
-  width: 25%;
+  width: 50%;
   position: fixed;
   top: 50px;
   right: 10px;
@@ -529,6 +529,10 @@ Buttons
 @media only screen and (min-width: 768px) {
   .work-image-container img {
     height: auto;
+  }
+  .nav-links.responsive {
+    background-color: white;
+    width: 25%;
   }
 }
 
