@@ -13,7 +13,7 @@ body {
 h1 {
   text-align: right;
   text-transform: uppercase;
-  font-size: 52px;
+  font-size: 35px;
   color: white;
   margin: 0;
   padding: 0;
@@ -27,6 +27,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px 0;
 }
 
 h3 {
@@ -49,7 +50,12 @@ p {
   font-size: 16px;
   color: #355d8e;
   font-weight: 400;
+  padding: 0 8px;
 }
+
+/* ******************************************** */
+/* Extra small devices (phones, 600px and down) */
+/* ******************************************** */
 
 /* ************
    NAV BAR
@@ -75,27 +81,7 @@ nav {
 }
 
 .nav-links {
-  list-style-type: none;
-  width: 56%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.nav-links li a,
-.nav-links li p {
-  text-transform: uppercase;
-  margin: 0;
-  text-decoration: none;
-  color: #355d8e;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.nav-links li a:hover {
-  color: black;
-  border-bottom: 3px solid black;
-  padding-bottom: 10px;
+  display: none;
 }
 
 /* ************
@@ -123,9 +109,9 @@ nav {
 ************* */
 
 .about {
-  margin: 0 auto;
-  width: 40%;
-  height: 80vh;
+  margin: 25px auto;
+  width: 80%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,6 +133,9 @@ TESTIMONIAL SLIDES
 
 /* Slideshow container */
 .testimonials-container {
+  min-height: 600px;
+  height: auto;
+  padding: 20px 0;
   width: 100%;
   height: 400px;
   position: relative;
@@ -183,18 +172,6 @@ TESTIMONIAL SLIDES
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* text */
@@ -260,74 +237,60 @@ TESTIMONIAL SLIDES
   height: auto;
 }
 
-.work-left {
-  display: flex;
-  justify-content: space-between;
-  height: 800px;
-  margin: 100px 0;
-}
-
+.work-left,
 .work-right {
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
-  height: 800px;
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 600px;
   margin: 100px 0;
 }
 
-.work-details-left {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  text-align: right;
-  padding: 3rem;
-}
-
+.work-details-left,
 .work-details-right {
-  width: 40%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  text-align: left;
-  padding: 3rem;
+  padding: 5px;
+  text-align: center;
+  align-items: center;
 }
 
-.work-details-right h3 {
-  text-align: left;
-}
-
+.work-details-right h3,
 .work-details-left h3 {
-  text-align: right;
+  text-align: center;
+  margin: 10px;
 }
 
 /* ************
-    CAREERS
+CAREERS
 ************* */
 
 .careers-container {
+  width: 100%;
   display: flex;
   height: 750px;
 }
 
 .careers-details {
-  width: 67%;
+  height: auto;
+  width: 100%;
   background-color: #355d8e;
   color: white;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 30px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .careers-details h2 {
   color: white;
   height: 25px;
-  margin: 30px;
+  margin: 10px;
 }
 
 .careers-details h4 {
@@ -337,6 +300,7 @@ TESTIMONIAL SLIDES
 
 .careers-details ul {
   margin: 20px 0;
+  padding: 0;
 }
 
 .careers-details p {
@@ -346,7 +310,7 @@ TESTIMONIAL SLIDES
 
 .careers-details li {
   list-style-type: none;
-  width: 40%;
+  width: 100%;
   margin: 0 auto;
   text-align: left;
   display: flex;
@@ -360,17 +324,19 @@ TESTIMONIAL SLIDES
 }
 
 /* ************
-    CONTACT
+CONTACT
 ************* */
 .contact-container {
-  width: 60%;
+  width: 100%;
   margin: 50px auto 100px auto;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-form {
-  /* border: 2px solid red; */
-  width: 40%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .contact-form form {
@@ -382,7 +348,7 @@ TESTIMONIAL SLIDES
 
 .client-info input {
   height: 50px;
-  width: 49%;
+  width: 100%;
   margin-bottom: 10px;
   padding-left: 15px;
 }
@@ -393,8 +359,8 @@ TESTIMONIAL SLIDES
 }
 
 .get-in-touch {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .get-in-touch ul {
@@ -418,14 +384,16 @@ TESTIMONIAL SLIDES
 } */
 
 .licenses h4 {
-  margin: 10px 10px 10px 0;
+  margin: 0 auto;
 }
+
 .licenses div {
   display: flex;
 }
 
 .social-media {
   margin-top: 50px;
+  text-align: center;
 }
 
 .social-media a {
@@ -433,7 +401,7 @@ TESTIMONIAL SLIDES
 }
 
 /* ************
-    FOOTER
+FOOTER
 ************ */
 
 footer {
@@ -443,22 +411,21 @@ footer {
   margin: 0 auto;
   text-align: center;
 }
+
 /* ************
     Images
 ************* */
-
 .work-image-container img {
-  width: 800px;
-  height: 800px;
+  width: 100%;
+  height: 300px;
 }
 
 #careers-image {
-  background-image: url("https://3vw0103uc7ws38bd723k0gni-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/jencon-home-careers2-min.png");
-  width: 33%;
-  background-repeat: no-repeat;
+  display: none;
 }
+
 /* ************
-    Buttons
+Buttons
 ************* */
 
 .btn-1 {
@@ -498,10 +465,8 @@ footer {
 
 #btn-submit {
   background-color: rgb(53, 93, 142);
+  margin: 0 auto;
   width: 200px;
-  position: absolute;
-  right: 0px;
-  bottom: -50px;
   color: white;
   padding: 10px 50px;
   font-size: 18px;
@@ -513,20 +478,75 @@ footer {
   background-color: rgba(53, 93, 142, 0.7);
 }
 
+/* *************************************************************** */
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+/* *************************************************************** */
+
+@media only screen and (min-width: 600px) {
+}
+
+/* ************************************************ */
+/* Medium devices (landscape tablets, 768px and up) */
+/* ************************************************ */
+@media only screen and (min-width: 768px) {
+  .work-image-container img {
+    height: auto;
+  }
+}
+
+/* *********************************************************** */
+/* Large devices (ipad pro / laptops / desktops, 992px and up) */
+/* *********************************************************** */
+
+@media only screen and (min-width: 992px) {
+}
+
+/* *************************************************************** */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* *************************************************************** */
+
+@media only screen and (min-width: 1200px) {
   h1 {
-    font-size: 35px;
+    font-size: 45px;
   }
 
   h2 {
-    margin: 10px 0;
+    margin: 0;
   }
+
+  p {
+    padding: 0;
+  }
+
   /* ************
    NAV BAR
 ************* */
 
   .nav-links {
+    list-style-type: none;
+    width: 56%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .nav-links li a,
+  .nav-links li p {
+    text-transform: uppercase;
+    margin: 0;
+    text-decoration: none;
+    color: #355d8e;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .nav-links li a:hover {
+    color: black;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+  }
+
+  #burger-menu {
     display: none;
   }
 
@@ -534,132 +554,116 @@ footer {
     ABOUT
 ************* */
   .about {
-    margin: 25px auto;
-    width: 80%;
-    height: auto;
+    margin: 0 auto;
+    width: 40%;
+    height: 80vh;
   }
 
   /* ************
    OUR WORK
 ************* */
-  .work-left,
+
+  .work-left {
+    flex-direction: row;
+    height: 800px;
+  }
+
   .work-right {
-    flex-direction: column-reverse;
-    width: 100%;
-    height: 600px;
+    flex-direction: row-reverse;
+    height: 800px;
   }
 
-  .work-details-left,
+  .work-details-left {
+    align-items: flex-end;
+    text-align: right;
+    padding: 3rem;
+  }
+
   .work-details-right {
-    width: 100%;
-    padding: 5px;
-    text-align: center;
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 3rem;
   }
 
-  .work-image-container img {
-    width: 100%;
-    height: 300px;
+  .work-details-right h3 {
+    text-align: left;
+    margin: 0;
   }
 
-  .work-details-right h3,
   .work-details-left h3 {
-    text-align: center;
-    margin: 10px;
+    text-align: right;
+    margin: 0;
   }
 
   /* ************
-   TESTIMONIALS
-************* */
-  .testimonials-container {
-    width: 100%;
-    min-height: 600px;
-    height: auto;
-    padding: 20px 0;
-  }
-  /* ************
-   CAREERS
-************* */
-
-  .careers-container {
-    flex-direction: column;
-    height: auto;
-  }
-
+  CAREERS
+  ************* */
   .careers-details {
-    padding: 30px 0;
-    width: 100%;
-    align-items: center;
+    width: 67%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .careers-details li {
-    width: 100%;
+    width: 80%;
   }
-
   .careers-details h2 {
-    margin: 10px;
+    margin: 30px;
   }
 
-  .careers-details ul {
-    margin: 20px 0;
-    padding: 0;
+  /* ************
+      Images
+  ************* */
+
+  .work-image-container img {
+    width: 800px;
+    height: 800px;
+  }
+
+  #careers-image {
+    background-image: url("https://3vw0103uc7ws38bd723k0gni-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/jencon-home-careers2-min.png");
+    width: 33%;
+    background-repeat: no-repeat;
+    display: block;
   }
 
   /* ************
     CONTACT
 ************* */
   .contact-container {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
+    width: 60%;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   .contact-form {
-    /* border: 2px solid red; */
-    width: 90%;
-    margin: 0 auto;
+    width: 40%;
   }
 
   .client-info input {
     height: 50px;
-    width: 100%;
+    width: 49%;
   }
 
   .get-in-touch {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .social-media {
+    text-align: left;
   }
 
   /* .licenses-container {
 } */
 
   .licenses h4 {
-    margin: 0 auto;
+    margin: 10px 10px 10px 0;
   }
-
-  .social-media {
-    text-align: center;
-  }
-
   #btn-submit {
-    position: static;
-    margin: 0 auto;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
   }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  html {
-    border: 2px solid yellow;
-  }
-}
-
-/* Large devices (ipad pro / laptops / desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  html {
-    border: 2px solid red;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 }

@@ -28,3 +28,7 @@ const showSlides = () => {
 };
 
 showSlides();
+
+const showDropDown = () => {
+  console.log("Burger Me");
+};
