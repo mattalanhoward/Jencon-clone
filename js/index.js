@@ -29,6 +29,12 @@ const showSlides = () => {
 
 showSlides();
 
-const showDropDown = () => {
-  console.log("Burger Me");
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+const showMenu = () => {
+  var x = document.getElementById("top-nav");
+  if (x.className === "nav-links") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav-links";
+  }
 };
